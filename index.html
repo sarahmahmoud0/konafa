@@ -1,47 +1,223 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>final</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/style.css">
-<head>
-<h1>Willkommen bie der Zubereitung von Konafa mit nutella<span class="badge badge-secondary"</span></h1>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">heim<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./aboutus.html">über uns</a>
-      </li>
-      <li class="nav-item dropdown">
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HAYAH</title>
+    <link rel="icon" type="image/png" href="photos/Orph.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+        console.log("Embedded script.js loaded");
+
+        function openNav() {
+            console.log("openNav function called");
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            console.log("closeNav function called");
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</head>
+<body>
+    <section class="header" style="background-image: url('photos/mainback.jpeg');">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="main.html"><img class="imagelogo" src="photos/Orph.png" alt="logo"></a>
+                <h1>HAYAH</h1>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="arabic.html">العربية</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">× </a>
+                    <div class="overlay-content">
+                        <a href="learn.html">Definition</a>
+                        <a href="volunteer.html">Internal System</a>
+                        <a href="support.html">Support</a>
+                        <a href="reference.html">Reference</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" onclick="openNav()" class="openbtn">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </a>
+            </div>
+        </nav>
+        <div class="title">
+          <br><br><br>
+    </section>
+    <main>
+      <br>
+      <h1>By supporting an orphan,You are supporting an entire community.</h1>
+      <div class="links">
+        <br>
+        <a href="speechtotext.html" class="btn"> Speech command</a>
+      </div>
+        <br>
+        <video controls>
+            <source src="photos/vid.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        <h3>1 in 10 children and young people are separated from their families, abandoned, neglected.<br>The effects often last a lifetime, creating a harmful cycle that repeats from one generation to the next. Children and young people need someone who is there for them, listens to them, and supports them, no matter what.</h3>
+        <br><br><br>
+        <h1>Our Core Values</h1>
+        <div class="divider"></div>
+        <div class="card-container">
+            <div class="card">
+                <a href="miss-vis.html">
+                    <img src="photos/mission.jpg" alt="Card Image 1">
+                    <div class="card-content">
+                        <h2>Our Mission And Vision</h2>
+                    </div>
+                </a>
+            </div>
         </div>
-      </li>
-      <li class="nav-item">
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<div class="jumbotron">
-  <h1 class="display-4">|konafa mit Nutella</h1>
-  <hr class="my-4">
-  <p>Für weitere Informationen klicken Sie auf Mehr erfahren</p>
-  <p class="lead">
-    <a class="btn btn-info btn-lg" href="./learnmore.html" role="button">Mehr erfahren</a>
-  </p>
-</div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <br><br>
+        <section class="what-you-can-do">
+            <div>
+                <h2>What you can do</h2>
+                <div class="divider"></div>
+                <p>
+                  There are lots of ways to partner with us. All you have to do is choose the way that works best for you. Whether you are rich in time, connections, or cash, everyone can make a difference.
+                </p>
+                <div class="actions">
+                     <div class="action-item">
+                         <a href="donate.html">
+                            <img src="photos/donation.png" alt="Donate">
+                            <span>Donate</span>
+                         </a>
+                    </div>
+                    <div class="action-item">
+                         <a href="volunteer.html">
+                            <img src="photos/team.png" alt="Volunteer">
+                             <span>Volunteer</span>
+                         </a>
+                    </div>
+                </div>
+                <br>
+                <a href="support.html" class="support-button">WAYS TO SUPPORT</a>
+            </div>
+        </section>
+        <br><br>
+        <h1> Our upcoming event agenda</h1>
+        <div class="divider"></div>
+
+        <div class="container">
+          <div class="card-image">
+            <a href="javascript:void(0);"><img src="photos/edu.png"> </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Education Team</h5>
+            <p class="card-text">Two engaging sessions will be prepared for the attendees, focusing on important topics that impact everyone’s life.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card-image">
+            <a href="javascript:void(0);"><img src="photos/theater.png"></a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Cinema & Theatre Team</h5>
+            <p class="card-text">A fun and educational play will be created, addressing a topic that’s both relevant and meaningful to the attendees.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card-image">
+            <a href="javascript:void(0);"><img src="photos/sport.png"> </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Sports Team</h5>
+            <p class="card-text">Fun exercises and interactive activities will be designed to keep attendees engaged throughout the event.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card-image">
+            <a href="javascript:void(0);"><img src="photos/music.png"></a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Music & Dance Performance Team</h5>
+            <p class="card-text">Entertainment for the entire event will be organized and managed to ensure a lively and enjoyable experience.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card-image">
+            <a href="javascript:void(0);"><img src="photos/buss.png"> </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Business Team</h5>
+            <p class="card-text">Fundraising responsibilities will be handled to support and finance all aspects of the event.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card-image">
+            <a href="javascript:void(0);"><img src="photos/technology.png"></a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Tech Team</h5>
+            <p class="card-text">Photography and event promotion will be managed to capture key moments and spread awareness before, during, and after the event.</p>
+          </div>
+        </div>
+
+
+  <br>
+  <h1>Additional Information:</h1>
+  <div class="divider"></div>
+  <br>
+  <p>📍: Name Orphanage </p>
+  <br>
+  <p> 📅: DD/MM/YY </p>
+  <br>
+  <p>⏱️: All day event, From.. to.. </p>
+  <br>
+        <div class="quote-container">
+                <div class="quote-break">//</div>
+                <div class="quote">
+                    It's not how much we give but how much we put into giving.
+                </div>
+                <br>
+                <div class="author">- Mother Teresa</div>
+                <br><br>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="survey-link">
+                <a href="https://form.jotform.com/250874396318568" target="_blank">Take Our Survey!</a>
+            </div>
+            <div class="contact-us">
+                Contact Us via WhatsApp: <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            </div>
+            <div class="copyright">
+                © 2025 HAYAH. All rights reserved.
+            </div>
+
+            <div class="social-media-links">
+                <a href="YOUR_INSTAGRAM_URL_HERE" target="_blank" aria-label="Visit our Instagram page">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="YOUR_TIKTOK_URL_HERE" target="_blank" aria-label="Visit our TikTok page">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="YOUR_FACEBOOK_URL_HERE" target="_blank" aria-label="Visit our Facebook page">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="texttospeech.js"></script>
+</body>
+</html>
